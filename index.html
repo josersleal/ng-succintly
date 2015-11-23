@@ -1,12 +1,18 @@
 <html>
     <head>
+<<<<<<< HEAD
         <script src="lib/angular.min.js"></script>
         <script src="js/app.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
+=======
+        <script src="lib/angular.min.js"></script>    
+        <script src="js/app.js"
+>>>>>>> 38c485151c8c58e83623c1ec7861d2423762bf69
     </head>
     <body ng-app="">
         <h2> Simple expression "{{1 +2}}"</h2>
         <p>{{1 +2}}</p>
+<<<<<<< HEAD
         <h2> binding to field "ng-model="name""</h2>
         Enter your name: <input type="text" ng-model="name"></input><br />
         Hello {{name}}
@@ -15,5 +21,15 @@
         <button ng-click="toggle()">Toggle</button>
         <p ng-show="visible">Hello World!</p>
     </div>
+=======
+        Enter your name: <input type="text" ng-model="name"></input>
+        Hello <p id="name"></p>
+        <p>toggling with app.js</p>
+        <div ng-controller="MyCtrl">
+            <button ng-click="toglle()">Toggle!</button>
+            <p ng-show="visible">Hello World</p>
+        </div>
+
+>>>>>>> 38c485151c8c58e83623c1ec7861d2423762bf69
     </body>
 </html>
