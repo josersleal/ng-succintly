@@ -1,10 +1,19 @@
 <html>
     <head>
-        <script src="lib/angular.min.js"></script>    
+        <script src="lib/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body ng-app="">
+        <h2> Simple expression "{{1 +2}}"</h2>
         <p>{{1 +2}}</p>
-        Enter your name: <input type="text" ng-model="name"></input>
-        Hello <p id="name"></p>
+        <h2> binding to field "ng-model="name""</h2>
+        Enter your name: <input type="text" ng-model="name"></input><br />
+        Hello {{name}}
+    <h2>hide an HTML element on button click</h2>
+    <div ng-controller="myController">
+        <button ng-click="toggle()">Toggle</button>
+        <p ng-show="visible">Hello World!</p>
+    </div>
     </body>
 </html>
